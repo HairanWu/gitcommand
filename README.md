@@ -1,6 +1,6 @@
 # git command Project for github testing
 
-# crate github repository
+# create github repository
 
 touch README.md 
 
