@@ -63,3 +63,21 @@ git branch --track [branch] [remote-branch]  # 新建一个分支，与指定的
 
 git push [remote_name] --delete  [branch_name]     # 删除指定远程分支
 
+#Git如何拉取指定远程分支
+(1) 直接拉取
+git clone -b dev 代码仓库地址 （dev是分支名称）
+
+(2) 分支拉取
+git init 进行初始化
+
+*与远程代码仓库建立连接：git remote add origin 代码仓库地址）
+
+*将远程分支拉到本地：git fetch origin <remote_branch>
+
+*创建本地分支：git checkout -b <local_branch> <remote_name/remote_branch> 
+
+git pull origin <remote_branch>
+
+（3）子模块
+git submodule init
+git submodule update
